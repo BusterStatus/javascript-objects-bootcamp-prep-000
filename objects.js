@@ -1,7 +1,7 @@
 var playlist = {Gorillaz: "Saturnz Barz"};
 
 function updatePlaylist (playlist, artistName, songTitle) {
-  console.log(Object.assign({}, playlist, {[artistName]: songTitle}));
+ playlist[artistName] = songTitle;
 }
 
 function removeFromPlaylist (playlist, artistName) {
